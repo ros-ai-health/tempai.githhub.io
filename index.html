@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp AI - AI-Powered ROS Diagnostics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Temp AI</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#problem">Problem</a></li>
+                <li><a href="#solution">Solution</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#mvp">MVP</a></li>
+                <li><a href="#team">Team</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 class="hero-title">Agentic Robotics Engineering</h1>
+            <p class="hero-subtitle">We're building the first Agentic AI that lives in your robotics stack.</p>
+            <div class="hero-image">
+                <div class="ai-mascot">
+                    <div class="mascot-face">
+                        <div class="eye left"></div>
+                        <div class="eye right"></div>
+                        <div class="mouth"></div>
+                    </div>
+                    <p class="mascot-text">Temp AI</p>
+                    <p class="mascot-subtitle">Your friendly agentic co-robotics engineer</p>
+                </div>
+            </div>
+            <div class="cta-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('problem')">Learn More</button>
+                <button class="btn btn-secondary" onclick="scrollToSection('solution')">Our Solution</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" class="problem-section">
+        <div class="container">
+            <h2 class="section-title">The Problem</h2>
+            <div class="problem-content">
+                <p>Robotics development is becoming increasingly complex, with modern systems consisting of hundreds of interdependent nodes, topics, and services.</p>
+                <div class="problem-highlight">
+                    <p>When a robot fails, engineers often spend hours or even days manually sifting through logs, monitoring topics, and reproducing errors to find the root cause.</p>
+                </div>
+                <p>This is a time-consuming and expensive process, often having to rely upon the intuition of experienced robotics engineers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="solution-section">
+        <div class="container">
+            <h2 class="section-title">The Solution</h2>
+            <p class="solution-intro">Agentic AI system that serves as the intelligent watchdog for your ROS architecture. It moves beyond simple alerts to provide deep root cause analysis and allows your developers to converse with the system to solve problems faster than ever.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>Error Prompting</h3>
+                    <h4>Conversational Deep-Dive into Problems</h4>
+                    <p>Turn any error report into an interactive dialogue. Once an issue is flagged, developers can ask our AI follow-up questions to rapidly explore the context around the failure.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🗺️</div>
+                    <h3>Conversational System Cartography</h3>
+                    <h4>Transform your complex system into an interactive map</h4>
+                    <p>Our agent allows any developer to ask plain-language questions like, "Show me the data flow for the navigation stack." It instantly generates explanations and diagrams.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Intelligent Fault Cascade Analysis</h3>
+                    <h4>This is our AI detective</h4>
+                    <p>It analyzes the stream of system-wide data to uncover the true origin of a failure. By connecting seemingly unrelated events, it traces the entire chain reaction back to the root cause.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3>Codebase Context-Aware Real-time System Diagnosis</h3>
+                    <h4>Holistic, real-time diagnosis</h4>
+                    <p>Our platform moves beyond simple metrics by integrating directly with your codebase to understand the intent behind every node. It knows not just what failed, but also what that component was supposed to be doing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works-section">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            
+            <div class="workflow-container">
+                <!-- Layer 1 -->
+                <div class="workflow-layer">
+                    <div class="layer-header">
+                        <span class="layer-number">1</span>
+                        <h3>Architectural Blueprinting Engine</h3>
+                    </div>
+                    <p>Our system begins with a deep, static analysis of your source code. Using advanced parsing techniques to deconstruct your codebase to create a foundational blueprint.</p>
+                    <div class="layer-details">
+                        <p>This blueprint meticulously maps out every key element: ROS nodes, their publishers and subscribers, service definitions, and critically the context of developer-written logs.</p>
+                    </div>
+                </div>
+
+                <!-- Layer 2 -->
+                <div class="workflow-layer">
+                    <div class="layer-header">
+                        <span class="layer-number">2</span>
+                        <h3>Dynamic Interaction Graph Synthesis</h3>
+                    </div>
+                    <p>This architectural blueprint is then synthesized into a dynamic interaction graph. This isn't just a static diagram; it's a machine-readable model of your system's nervous system.</p>
+                    <div class="layer-details">
+                        <p>The graph maps ROS nodes as vertices and the flow of data through topics and services as directed edges, creating a comprehensive and digestible model of all potential component interactions.</p>
+                    </div>
+                </div>
+
+                <!-- Layer 3 -->
+                <div class="workflow-layer">
+                    <div class="layer-header">
+                        <span class="layer-number">3</span>
+                        <h3>The Semantic Reasoning Layer</h3>
+                    </div>
+                    <p>Here, our first layer of intelligence interprets the interaction graph to understand the system's intended functionality.</p>
+                    <div class="layer-details">
+                        <p>It infers the purpose of each node and the significance of their relationships. Most importantly, it uses this understanding to strategically identify the most critical topics and developer-defined logs to monitor for diagnosis.</p>
+                    </div>
+                </div>
+
+                <!-- Layer 4 -->
+                <div class="workflow-layer">
+                    <div class="layer-header">
+                        <span class="layer-number">4</span>
+                        <h3>The Diagnostic Inference Engine</h3>
+                    </div>
+                    <p>Our Diagnostic Inference Engine takes the crucial context and monitoring strategy from the Semantic Layer and fuses it with a real-time window of live log and message data.</p>
+                    <div class="layer-details">
+                        <p>By cross-referencing this live data against the system's known architecture and intent, it performs a rapid root cause analysis, delivering a precise and actionable explanation of the failure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MVP Section -->
+    <section id="mvp" class="mvp-section">
+        <div class="container">
+            <h2 class="section-title">The MVP</h2>
+            <div class="mvp-content">
+                <p>Our initial product is a powerful, AI-driven log monitoring and anomaly detection tool.</p>
+                <div class="mvp-features">
+                    <div class="mvp-feature">
+                        <span class="checkmark">✓</span>
+                        Securely ingests all `rosout` streams from your ROS system
+                    </div>
+                    <div class="mvp-feature">
+                        <span class="checkmark">✓</span>
+                        Uses advanced Natural Language Processing (NLP) models to understand intent
+                    </div>
+                    <div class="mvp-feature">
+                        <span class="checkmark">✓</span>
+                        Applies anomaly detection techniques to flag unusual patterns
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Model Section -->
+    <section id="business-model" class="business-section">
+        <div class="container">
+            <h2 class="section-title">Business Model</h2>
+            <p class="business-intro">Saas for Robotics Teams</p>
+            <p class="business-subtitle">We will use a tiered subscription model (SaaS):</p>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Developer</h3>
+                        <div class="price">Free</div>
+                    </div>
+                    <div class="pricing-content">
+                        <p>For individual developers and academic use.</p>
+                        <p>Basic log analysis for a single machine.</p>
+                    </div>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="pricing-header">
+                        <h3>Team</h3>
+                        <div class="price">$ / seat / month</div>
+                    </div>
+                    <div class="pricing-content">
+                        <p>For professional teams.</p>
+                        <ul>
+                            <li>Advanced real-time monitoring</li>
+                            <li>Integrations (Slack, Jira)</li>
+                            <li>Historical data analysis</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <div class="price">Custom Pricing</div>
+                    </div>
+                    <div class="pricing-content">
+                        <p>For companies deploying fleets of robots.</p>
+                        <ul>
+                            <li>On-premise deployment options</li>
+                            <li>Fleet-wide analytics</li>
+                            <li>Predictive maintenance alerts</li>
+                            <li>Premium support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Section -->
+    <section id="market" class="market-section">
+        <div class="container">
+            <h2 class="section-title">Market Opportunity</h2>
+            
+            <div class="market-grid">
+                <div class="market-card">
+                    <h3>TAM</h3>
+                    <h4>Total Addressable Market</h4>
+                    <div class="market-number">$50B → $111B</div>
+                    <p>Global Robotics Market in 2025, estimated to reach $111 billion by 2030 with a CAGR of about 14%.</p>
+                </div>
+
+                <div class="market-card">
+                    <h3>SAM</h3>
+                    <h4>Serviceable Addressable Market</h4>
+                    <div class="market-number">$20B</div>
+                    <p>The market for robotics software, currently placed at about $20 billion and growing with a CAGR of 22.4%.</p>
+                </div>
+
+                <div class="market-card">
+                    <h3>SOM</h3>
+                    <h4>Serviceable Obtainable Market</h4>
+                    <div class="market-number">Multi-Billion</div>
+                    <p>Initial target: high-growth startups and enterprise R&D labs in logistics, automation, and agriculture robotics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <div class="container">
+            <h2 class="section-title">The Team</h2>
+            
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">AK</div>
+                    <h3>Aditya Kovilur</h3>
+                    <p class="team-title">MS Computer Science @ Texas A&M</p>
+                    <p class="team-bio">Prev, researcher @ High Performance Computing Lab</p>
+                    <p class="team-bio">Undergrad, IIT Madras</p>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar">MM</div>
+                    <h3>Mehul Menon</h3>
+                    <p class="team-title">MS Robotics @ CMU</p>
+                    <p class="team-bio">Prev, researcher @ NUS</p>
+                    <p class="team-bio">Undergrad, NIT Durgapur</p>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar">AA</div>
+                    <h3>Aayush Agrawal</h3>
+                    <p class="team-title">MS Robotic Systems Development @ CMU</p>
+                    <p class="team-bio">Prev, Co-founder @ TelebortiX</p>
+                    <p class="team-bio">Undergrad, IIT Madras</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h2 class="footer-title">In Summary</h2>
+            <p class="footer-text">Our AI-powered ROS diagnostics platform presents a transformative solution to the pressing challenges facing robotics development. By providing real-time, context-aware insights, we empower engineering teams to focus on innovation rather than spend countless hours debugging complex systems.</p>
+            <p class="footer-text">With a massive market opportunity and a talented team of robotics experts, we are poised to lead the future of intelligent robotics monitoring.</p>
+            <p class="footer-cta">Join us in building the AI co-pilot that every robot deserves.</p>
+            <div class="footer-brand">Temp AI</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
