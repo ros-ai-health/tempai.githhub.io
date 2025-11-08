@@ -3,23 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temp AI - AI-Powered ROS Diagnostics</title>
+    <title>Argus AI - AI-Powered ROS Diagnostics</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container">
-            <div class="logo">Temp AI</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#problem">Problem</a></li>
-                <li><a href="#solution">Solution</a></li>
-                <li><a href="#how-it-works">How It Works</a></li>
-                <li><a href="#mvp">MVP</a></li>
-                <li><a href="#team">Team</a></li>
-            </ul>
-        </div>
+    <div class="container">
+
+	<div class="logo">
+	  <img src="./assets/logo.png" alt="Argus AI Logo" class="logo-img">
+	  <span class="logo-text">Argus AI</span>
+	</div>
+
+	<ul class="nav-links">
+		<li><a href="#home">Home</a></li>
+		<li><a href="#problem">Problem</a></li>
+		<li><a href="#solution">Solution</a></li>
+		<li><a href="#how-it-works">How It Works</a></li>
+		<li><a href="#mvp">MVP</a></li>
+		<li><a href="#team">Team</a></li>
+	</ul>
+    </div>
     </nav>
 
     <!-- Hero Section -->
@@ -34,7 +39,7 @@
                         <div class="eye right"></div>
                         <div class="mouth"></div>
                     </div>
-                    <p class="mascot-text">Temp AI</p>
+                    <p class="mascot-text">Argus AI</p>
                     <p class="mascot-subtitle">Your friendly agentic co-robotics engineer</p>
                 </div>
             </div>
@@ -50,7 +55,7 @@
         <div class="container">
             <h2 class="section-title">The Problem</h2>
             <div class="problem-content">
-                <p>Robotics development is becoming increasingly complex, with modern systems consisting of hundreds of interdependent nodes, topics, and services.</p>
+                <p>Robotics development is becoming increasingly complex, with modern systems consisting of hundreds of interdependent channels.</p>
                 <div class="problem-highlight">
                     <p>When a robot fails, engineers often spend hours or even days manually sifting through logs, monitoring topics, and reproducing errors to find the root cause.</p>
                 </div>
@@ -63,21 +68,14 @@
     <section id="solution" class="solution-section">
         <div class="container">
             <h2 class="section-title">The Solution</h2>
-            <p class="solution-intro">Agentic AI system that serves as the intelligent watchdog for your ROS architecture. It moves beyond simple alerts to provide deep root cause analysis and allows your developers to converse with the system to solve problems faster than ever.</p>
+            <p class="solution-intro">The&nbsp;Agentic AI watchdog for your robotics architecture with Deep Root Cause Analysis and Conversational Debugging to solve problems faster than ever</p>
             
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">💬</div>
-                    <h3>Error Prompting</h3>
+                    <h3>Conversational Error Prompting</h3>
                     <h4>Conversational Deep-Dive into Problems</h4>
                     <p>Turn any error report into an interactive dialogue. Once an issue is flagged, developers can ask our AI follow-up questions to rapidly explore the context around the failure.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">🗺️</div>
-                    <h3>Conversational System Cartography</h3>
-                    <h4>Transform your complex system into an interactive map</h4>
-                    <p>Our agent allows any developer to ask plain-language questions like, "Show me the data flow for the navigation stack." It instantly generates explanations and diagrams.</p>
                 </div>
 
                 <div class="feature-card">
@@ -89,7 +87,7 @@
 
                 <div class="feature-card">
                     <div class="feature-icon">⚙️</div>
-                    <h3>Codebase Context-Aware Real-time System Diagnosis</h3>
+                    <h3>Context Aware Real-Time Diagnosis</h3>
                     <h4>Holistic, real-time diagnosis</h4>
                     <p>Our platform moves beyond simple metrics by integrating directly with your codebase to understand the intent behind every node. It knows not just what failed, but also what that component was supposed to be doing.</p>
                 </div>
@@ -104,16 +102,21 @@
             
             <div class="workflow-container">
                 <!-- Layer 1 -->
-                <div class="workflow-layer">
-                    <div class="layer-header">
-                        <span class="layer-number">1</span>
-                        <h3>Architectural Blueprinting Engine</h3>
-                    </div>
-                    <p>Our system begins with a deep, static analysis of your source code. Using advanced parsing techniques to deconstruct your codebase to create a foundational blueprint.</p>
-                    <div class="layer-details">
-                        <p>This blueprint meticulously maps out every key element: ROS nodes, their publishers and subscribers, service definitions, and critically the context of developer-written logs.</p>
-                    </div>
-                </div>
+		<div class="workflow-layer">
+		  <div class="layer-header">
+		    <span class="layer-number">1</span>
+		    <h3>Architectural Blueprinting Engine</h3>
+		  </div>
+		  
+		  <ul>
+		    <li>Deep analysis of your codebase</li>
+		    <li>Advanced parsing to express intent</li>
+		  </ul>
+
+		  <div class="layer-details">
+			<p>This blueprint meticulously maps out every key element: ROS nodes, their publishers and subscribers, service definitions, and critically the context of developer-written logs.</p>
+		  </div>
+		</div>
 
                 <!-- Layer 2 -->
                 <div class="workflow-layer">
@@ -121,7 +124,10 @@
                         <span class="layer-number">2</span>
                         <h3>Dynamic Interaction Graph Synthesis</h3>
                     </div>
-                    <p>This architectural blueprint is then synthesized into a dynamic interaction graph. This isn't just a static diagram; it's a machine-readable model of your system's nervous system.</p>
+		  <ul>
+		    <li>Generates a dynamic interaction graph</li>
+		    <li>Machine-readable diagrams</li>
+		  </ul>
                     <div class="layer-details">
                         <p>The graph maps ROS nodes as vertices and the flow of data through topics and services as directed edges, creating a comprehensive and digestible model of all potential component interactions.</p>
                     </div>
@@ -133,7 +139,11 @@
                         <span class="layer-number">3</span>
                         <h3>The Semantic Reasoning Layer</h3>
                     </div>
-                    <p>Here, our first layer of intelligence interprets the interaction graph to understand the system's intended functionality.</p>
+		  <ul>
+		    <li>Interpretation of intent</li>
+		    <li>Comprehends the individual function of each node</li>
+		    <li>Developer input based signal filtering</li>
+		  </ul>
                     <div class="layer-details">
                         <p>It infers the purpose of each node and the significance of their relationships. Most importantly, it uses this understanding to strategically identify the most critical topics and developer-defined logs to monitor for diagnosis.</p>
                     </div>
@@ -145,7 +155,10 @@
                         <span class="layer-number">4</span>
                         <h3>The Diagnostic Inference Engine</h3>
                     </div>
-                    <p>Our Diagnostic Inference Engine takes the crucial context and monitoring strategy from the Semantic Layer and fuses it with a real-time window of live log and message data.</p>
+		  <ul>
+		    <li>Real-time analysis of signals</li>
+		    <li>Cross-referencing with intent to provide diagnosis</li>
+		  </ul>
                     <div class="layer-details">
                         <p>By cross-referencing this live data against the system's known architecture and intent, it performs a rapid root cause analysis, delivering a precise and actionable explanation of the failure.</p>
                     </div>
@@ -268,7 +281,7 @@
             
             <div class="team-grid">
                 <div class="team-card">
-                    <div class="team-avatar">AK</div>
+                    <div class="team-avatar"><img src="./assets/aditya.jpg" alt="Aditya Kovilur"></div>
                     <h3>Aditya Kovilur</h3>
                     <p class="team-title">MS Computer Science @ Texas A&M</p>
                     <p class="team-bio">Prev, researcher @ High Performance Computing Lab</p>
@@ -276,7 +289,7 @@
                 </div>
 
                 <div class="team-card">
-                    <div class="team-avatar">MM</div>
+                    <div class="team-avatar"><img src="./assets/mehul.png" alt="Aditya Kovilur"></div>
                     <h3>Mehul Menon</h3>
                     <p class="team-title">MS Robotics @ CMU</p>
                     <p class="team-bio">Prev, researcher @ NUS</p>
@@ -284,7 +297,7 @@
                 </div>
 
                 <div class="team-card">
-                    <div class="team-avatar">AA</div>
+                    <div class="team-avatar"><img src="./assets/aayush.jpeg" alt="Aditya Kovilur"></div>
                     <h3>Aayush Agrawal</h3>
                     <p class="team-title">MS Robotic Systems Development @ CMU</p>
                     <p class="team-bio">Prev, Co-founder @ TelebortiX</p>
@@ -297,11 +310,11 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <h2 class="footer-title">In Summary</h2>
+            <h2 class="footer-title">Summary</h2>
             <p class="footer-text">Our AI-powered ROS diagnostics platform presents a transformative solution to the pressing challenges facing robotics development. By providing real-time, context-aware insights, we empower engineering teams to focus on innovation rather than spend countless hours debugging complex systems.</p>
             <p class="footer-text">With a massive market opportunity and a talented team of robotics experts, we are poised to lead the future of intelligent robotics monitoring.</p>
             <p class="footer-cta">Join us in building the AI co-pilot that every robot deserves.</p>
-            <div class="footer-brand">Temp AI</div>
+            <div class="footer-brand">Argus AI</div>
         </div>
     </footer>
 
